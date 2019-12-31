@@ -14,7 +14,7 @@ body {
     touch-action: manipulation;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-y: scroll;
+    overflow-y: auto;
     font-family: lato, sans-serif, Arial, Helvetica;
     min-width: 350px;
     /* background: #293949; */

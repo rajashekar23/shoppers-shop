@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
@@ -23,6 +23,8 @@ import { ShopPageComponent } from './pages/shop-page/shop-page.component';
 import { ViewcartPageComponent } from './pages/viewcart-page/viewcart-page.component';
 import { ProductDetailsPageComponent } from './pages/product-details-page/product-details-page.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { SliderDirective } from './slider/slider.directive';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -46,11 +48,14 @@ import { ContactComponent } from './components/contact/contact.component';
     ShopPageComponent,
     ViewcartPageComponent,
     ProductDetailsPageComponent,
-    ContactComponent
+    ContactComponent,
+    SliderDirective,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

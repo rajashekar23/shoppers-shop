@@ -1,3 +1,13 @@
-<p>
-  policies works!
-</p>
+<div class="policy">
+  <div fxLayout="row wrap" fxLayoutAlign="center center">
+    <ng-container *ngFor="let item of policies">
+      <div fxFlexAlign="start" class="icon">
+      <i class="{{ item.icon }}"></i>
+    </div>
+      <div fxLayout="column" fxFlex="13" class="sum">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.summary }}</p>
+    </div>
+    </ng-container>
+  </div>
+</div>

@@ -7,13 +7,12 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { ViewcartPageComponent } from './pages/viewcart-page/viewcart-page.component';
 import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
 import { OrderconfirmPageComponent } from './pages/orderconfirm-page/orderconfirm-page.component';
-import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { ProductDetailsPageComponent } from './pages/product-details-page/product-details-page.component';
 
 const routes: Routes = [
   {path: '', component: HomePageComponent},
   {path: 'shop', component: ShopPageComponent},
-  {path: 'newArriavals', component: NewarrivalsPageComponent},
+  {path: 'newArrivals', component: NewarrivalsPageComponent},
   {path: 'contactPage', component: ContactPageComponent},
   {path: 'viewCart', component: ViewcartPageComponent},
   {path: 'checkout', component: CheckoutPageComponent},
@@ -21,7 +20,7 @@ const routes: Routes = [
   {path: 'productDetails', component: ProductDetailsPageComponent}];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: false, scrollPositionRestoration: 'top' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -1,0 +1,31 @@
+.banner{
+    background-image: url('../../../assets/images/hero_1.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+.quote{
+    margin: auto;
+}
+.quote p{
+    margin-top: 10px;
+    color: #333333;
+    font-size: 20px;
+    line-height: 35px;
+}
+.quote h1{
+    font-size: 50px !important;
+    font-weight: 900;
+    color: black;
+}
+.quote button{
+    background-color: #7971ea;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 20px;
+}

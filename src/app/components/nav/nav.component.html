@@ -1,3 +1,42 @@
-<p>
-  nav works!
-</p>
+<div class="main">
+<div class="nav" fxLayout="row" fxLayoutAlign="space-evenly center" fxFlexAlign="center">
+<div class="search">
+  <i class="fas fa-search"></i>
+  <input type="text" placeholder="search">
+</div>
+<div class="title">
+  <a>SHOPPERS SHOP</a>
+</div>
+<div class="icons">
+  <i class="fas fa-user"></i>
+  <i class='far fa-heart'></i>
+  <i class='fas fa-shopping-cart' routerLink="viewCart"></i>
+</div>
+</div>
+<div class="navbar" fxLayout="row" fxLayoutAlign="center center" fxFlexAlign="center">
+  <div class="dropdown" routerLink="/" routerLinkActive="active">
+    <button class="dropbtn" >HOME 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+  <a>ABOUT</a>
+  <div class="dropdown" routerLink="shop" routerLinkActive="active">
+    <button class="dropbtn">SHOP
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+  <a>CATALOGUE</a>
+  <a routerLink="newArrivals" routerLinkActive="active">NEW ARRIVALS</a>
+  <a routerLink="contactPage" routerLinkActive="active">CONTACT</a>
+</div>
+</div>

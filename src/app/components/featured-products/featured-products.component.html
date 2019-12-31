@@ -1,3 +1,26 @@
-<p>
-  featured-products works!
-</p>
+
+<div class="products">
+
+
+<div class="title" fxLayout="row" fxLayoutAlign="center center">
+  <h1>Featured products</h1>
+</div>
+
+
+<!-- <app-slider> -->
+  <div fxLayout="row wrap" fxLayoutAlign="center center" >
+    <ng-container *ngFor="let item of featuredProducts">
+      <div class="card" fxLayout="column" fxFlex="15" style="padding: 0;">
+        <img src="../../../assets/images/{{ item.img }}" height="270px"  margin="0">
+        <div fxLayout="row" style="padding:30px;">
+          <div fxLayout="column" fxLayoutAlign="space-around center" style="margin: auto;" >
+          <h3>{{ item.name }}</h3>
+          <p>{{ item.summary }}</p>
+          <h5>{{ item.price | currency }}</h5>
+          </div>
+        </div>
+       </div>
+    </ng-container>
+  </div>
+</div>
+<!-- </app-slider> -->

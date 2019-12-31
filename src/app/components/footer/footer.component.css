@@ -1,0 +1,17 @@
+.main{
+    padding: 30px;
+}
+a{
+    color: #5c626e;
+    line-height: 1.7;
+    font-weight: 300;
+    font-size: 16px;
+}
+h4{
+    font-size: 20px;
+    color: #25262a;
+    margin: 0 0 24px;
+    font-family: inherit;
+    font-weight: 500;
+
+}
