@@ -1,3 +1,17 @@
-<p>
-  product-details works!
-</p>
+<div class="main">
+  <div class="product" fxLayout="row" fxflexLayout="space-between center">
+    <div fxFlex="40">
+      <img src="../../../assets/images/{{ selectedProduct.img }}" />
+    </div>
+    <div fxFlex="50">
+      <h2>{{ selectedProduct.name }}</h2>
+      <p>{{ selectedProduct.description }}</p>
+      <h3>{{ selectedProduct.price | currency }}</h3>
+      <mat-radio-group>
+        <mat-radio-button value="value1">Small</mat-radio-button>
+        <mat-radio-button value="value2">Medium</mat-radio-button>
+        <mat-radio-button value="value2">Large</mat-radio-button>
+      </mat-radio-group>
+    </div>
+  </div>
+</div>

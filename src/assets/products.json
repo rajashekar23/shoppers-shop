@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "img": "cloth_1.jpg",
+    "name": "Tank Top",
+    "summary": "Finding perfect t-shirt",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Pariatur vitae explicabo Incidunt facere natus soluta dolores iusto! Molestiae expedita veritatis nesciunt doloremque sint asperiores fuga voluptas distinctio aperiam ratione dolore",
+    "price": 500
+  },
+  {
+    "id": 1,
+    "img": "hero_2.png",
+    "name": "Corator",
+    "summary": "Finding perfect products",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Pariatur vitae explicabo Incidunt facere natus soluta dolores iusto! Molestiae expedita veritatis nesciunt doloremque sint asperiores fuga voluptas distinctio aperiam ratione dolore",
+    "price": 590
+  },
+  {
+    "id": 2,
+    "img": "cloth_2.jpg",
+    "name": "Polo Shirt",
+    "summary": "Finding perfect shirt",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Pariatur vitae explicabo Incidunt facere natus soluta dolores iusto! Molestiae expedita veritatis nesciunt doloremque sint asperiores fuga voluptas distinctio aperiam ratione dolore",
+    "price": 750
+  },
+  {
+    "id": 3,
+    "img": "cloth_3.jpg",
+    "name": "T-Shirt Mockup",
+    "summary": "Finding perfect t-shirt",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Pariatur vitae explicabo Incidunt facere natus soluta dolores iusto! Molestiae expedita veritatis nesciunt doloremque sint asperiores fuga voluptas distinctio aperiam ratione dolore",
+    "price": 650
+  },
+  {
+    "id": 4,
+    "img": "hero_2.png",
+    "name": "Corator",
+    "summary": "Finding perfect products",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Pariatur vitae explicabo Incidunt facere natus soluta dolores iusto! Molestiae expedita veritatis nesciunt doloremque sint asperiores fuga voluptas distinctio aperiam ratione dolore",
+    "price": 590
+  }
+]

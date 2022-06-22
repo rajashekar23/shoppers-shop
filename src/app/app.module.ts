@@ -25,6 +25,7 @@ import { ProductDetailsPageComponent } from './pages/product-details-page/produc
 import { ContactComponent } from './components/contact/contact.component';
 import { SliderDirective } from './slider/slider.directive';
 import { SliderComponent } from './slider/slider.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { SliderComponent } from './slider/slider.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

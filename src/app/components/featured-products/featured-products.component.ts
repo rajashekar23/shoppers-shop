@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ProductsService } from 'src/app/common/services/products.service';
 
 @Component({
   selector: 'app-featured-products',
@@ -7,15 +9,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeaturedProductsComponent implements OnInit {
 
-  constructor() { }
-featuredProducts = [
-  {img: 'cloth_1.jpg', name: 'Tank Top', summary: 'Finding perfect t-shirt', price: 500},
-  {img: 'hero_2.png', name: 'Corator', summary: 'Finding perfect products', price: 590},
-  {img: 'cloth_2.jpg', name: 'Polo Shirt', summary: 'Finding perfect shirt', price: 750},
-  {img: 'cloth_3.jpg', name: 'T-Shirt Mockup', summary: 'Finding perfect t-shirt', price: 650},
-  {img: 'hero_2.png', name: 'Corator', summary: 'Finding perfect products', price: 590},
-];
+  constructor(private productService: ProductsService, private router: Router) { }
+  slideItems = [];
+  featuredProducts = [];
   ngOnInit() {
+    this.getProducts();
+  }
+
+  getProducts() {
+    this.productService.getProducts().subscribe((data: any) => {
+      this.featuredProducts = data;
+      this.slideItems = this.featuredProducts.splice(0, 3);
+    })
+  }
+
+  onNext() {
+    this.slideItems.push(this.featuredProducts.slice(0, 2));
+  }
+
+  onSelectProduct(item) {
+    this.productService.selectedProduct.next(item);
+    this.productService.preselect.next(item);
+    this.router.navigateByUrl('/productDetails');
   }
 
 }
